@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso a Recursos</title>
+    <style>
+        /* Diseño moderno y limpio */
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #7f8c8d;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .btn-monetag {
+            display: block;
+            background: #007bff;
+            color: white;
+            padding: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+        }
+
+        .btn-monetag:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+
+        .footer-note {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>¡Archivo Listo!</h1>
+        <p>Tu descarga se ha generado correctamente. Haz clic en el botón azul para continuar.</p>
+        
+        <a href="https://omg10.com/4/10871634" class="btn-monetag" id="downloadBtn">
+            CONTINUAR AHORA
+        </a>
+
+        <div class="footer-note">
+            ✓ Conexión segura SSL<br>
+            ✓ Verificado por Google Safe
+        </div>
+    </div>
+
+    <script>
+        // Efecto visual al hacer clic
+        document.getElementById('downloadBtn').onclick = function() {
+            this.innerHTML = "Cargando...";
+            this.style.opacity = "0.7";
+        };
+    </script>
+
+</body>
+</html>
